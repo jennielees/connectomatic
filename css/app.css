@@ -5,7 +5,7 @@
 }
 .slider img {
   width: auto;
-  height: 125px;
+  height: 150px;
   font-size: 0px !important;
   line-height: 0px !important;
 }
@@ -13,14 +13,50 @@
   margin: 30px 15px 15px;
 }
 
-.subtitle {
+.meet-prompt {
   font-size: 14px;
+}
+
+.feed li.media {
+  padding-right: 15px;
+}
+
+.media-body {
+  margin-right: 10px !important;
+}
+
+.item-header {
+  padding-right: 20px;
+}
+
+.row-header {
+  font-size: 14px;
+  color: #999;
+}
+
+.subtitle {
+  font-size: 13px;
   color: #666;
+}
+
+.feed img {
+  height: 60px;
+  width: 60px;
+}
+
+.indiv-header {
+  align: right;
+  border-bottom: 1px solid #ccc;
+}
+
+.event-logo {
+  height: 20px;
 }
 
 .added {
   font-size: 12px;
   color: #999;
+  display: inline;
 }
 
 .tags {
@@ -33,7 +69,7 @@
   background-color: transparent;
   line-height: 22px;
   font-size: 12px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .tags .tag {
@@ -43,4 +79,28 @@
   background: #aaa;
   border-radius: .25em;
   padding: 4px;
+}
+
+.single-contact-header {
+  height: 100px;
+  padding: 10px;
+}
+
+.single-contact-header img {
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.single-contact-header h3 {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.single-contact-header .linkedin {
+  font-size: 13px;
+}
+
+.linkedin .fa {
+  font-size: 16px;
 }
