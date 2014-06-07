@@ -1,0 +1,46 @@
+.slider {
+  margin-bottom: 0;
+  font-size: 0px !important;
+  line-height: 0px !important;
+}
+.slider img {
+  width: auto;
+  height: 125px;
+  font-size: 0px !important;
+  line-height: 0px !important;
+}
+.content-padded {
+  margin: 30px 15px 15px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+.added {
+  font-size: 12px;
+  color: #999;
+}
+
+.tags {
+  background-color: #fff;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #555;
+  vertical-align: middle;
+  max-width: 100%;
+  background-color: transparent;
+  line-height: 22px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.tags .tag {
+  margin-right: 2px;
+  color: white;
+  font-weight: normal;
+  background: #aaa;
+  border-radius: .25em;
+  padding: 4px;
+}
