@@ -424,8 +424,8 @@ margin-right: 20px;
 }
 
 .dotted {
-  position: absolute;
-  top: 105px;
+  position: relative;
+  top: 20px;
   left: 80px;
   width: 50%;
   border-bottom: 2px dashed black;
