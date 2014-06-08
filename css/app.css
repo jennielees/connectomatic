@@ -347,7 +347,7 @@ margin-right: 20px;
   color: #000;
 }
 
-#tags_tagsinput {
+.search-box-outer {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 5px;
@@ -400,6 +400,16 @@ margin-right: 20px;
 }
 
 .tagsinput .tag {
+  font-size: 14px;
+    margin-right: 2px;
+    color: white;
+    font-weight: normal;
+    background: rgba(94, 172, 173, 1.0);
+    border-radius: .25em;
+    padding: 4px;
+}
+
+.search-box-outer .tag {
   font-size: 14px;
     margin-right: 2px;
     color: white;

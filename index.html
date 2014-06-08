@@ -234,11 +234,21 @@
 
     <div id="resultsModal" class="modal">
 
+          <header class="bar bar-nav">
+            <a class="icon icon-close pull-right" href="#resultsModal"></a>
+
+            <h1 class="title">Connectomatic</h1>
+
+          </header>
           <div class="content">
 
           <div class="welcome-search">
           <div class="search-header">Results</div>
-            <input name="tags" id="tags" value="startups" />
+
+                <div class="search-box-outer">
+                    <span class="tag">startups x</span>
+                </div>
+
           </div>
 
 
@@ -371,8 +381,6 @@
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/jquery.tagsinput.js"></script>
     <script>
-
-    $('#tags').tagsInput();
 
     $('#search').keypress(function (e) {
           if (e.which == 13) {
