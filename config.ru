@@ -1,17 +1,10 @@
 $stdout.sync = true
 
+root = '.'
 use Rack::Static,
-  :urls => ["/css", "/js", "/images", "/avatars", "/fonts"],
-  :root => "."
-
-run lambda { |env|
-  [
-    200,
-    {
-      'Content-Type'  => 'text/html',
-      'Cache-Control' => 'public, max-age=86400'
-    },
-    File.open('index.html', File::RDONLY)
-  ]
-}
-
+  :urls => Dir.glob("#{root}/*").map { |fn| fn.gsub(/#{root}/, '')},
+  :root => root,
+  :index => 'index.html',
+  :header_rules => [[:all, {'Cache-Control' => 'public, max-age=3600'}]]
+headers = {'Content-Type' => 'text/html', 'Content-Length' => '9'}
+run lambda { |env| [404, headers, ['Not Found']] }
