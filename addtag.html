@@ -35,7 +35,7 @@
         <div class="stream-content tag-prompt">
           <p><div class="card-header">
             <a class="icon icon-left-nav pull-left" href="addlocation.html"></a>
-            Tag Jennifer<div class="card-done"><a href="addnote.html">Done</a></div></div></p><br/>
+            Tag Jennifer<div class="card-done"><a class="icon icon-right-nav pull-right"  href="addnote.html"></a></div></div></p><br/>
 
           <h5>Smart tags (automatic)</h5>
           <p class="tags smart">
@@ -48,11 +48,18 @@
 
           <h5>Frequently used tags</h5>
           <p class="tags suggested">
-            <span class="tag">cleantech</span><span id="startups-tag" class="tag">startups</span><span class="tag">APIs</span><span class="tag">women</span><span class="tag">data science</span>
+            <span class="tag">cleantech</span><span id="startups-tag" onclick="javascript:toggletag();" class="tag">startups</span><span class="tag">APIs</span><span class="tag">women</span><span class="tag">data science</span>
           </p>
 
       </div>
-      </div>
+
+      <script>
+        $('#startups-tag').click(function() {
+          $('#startups-tag').toggle();
+          $('#startups-hidden').toggle();
+        })
+      </script>
+  </div>
 
 
 

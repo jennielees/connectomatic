@@ -7,9 +7,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
     <link rel="apple-touch-icon" href="apple-icon.png">
-
     <link rel="stylesheet" href="css/ratchet.min.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -25,7 +23,7 @@
 
     <div class="content">
 
-    <div class="welcome-header">
+      <div class="welcome-header">
 
         <div class="welcome-flash">
             <img class="main-av" src="avatars/av_elena.jpg"/>
@@ -56,7 +54,7 @@
     </div>
 
     <div class="welcome-search">
-      <input type="search" id="search" class="srch" placeholder="Search"><a id="results-link" data-ignore="push" href="results.html">Go</a>
+      <input type="search" id="search"  onclick="javascript:popsearch();"  class="srch" placeholder="Search"><a id="results-link" data-ignore="push" href="results.html">Go</a>
     </div>
 
     <ul class="table-view">
@@ -241,6 +239,24 @@
             window.location.replace("results.html").delay('400');
           }
         });
+
+    function toggletag() {
+      $('#startups-tag').toggle();
+      $('#startups-hidden').toggle();
+    }
+
+    function populatenote() {
+      $('#add-note-ta').text("Met at Startup Weekend B2B");
+    }
+
+    function popsearch() {
+      $('#search').val("startups");
+    }
+
+
+    function showintros() {
+      $('#intro-pop').toggle();
+    }
     </script>
 
   </body>

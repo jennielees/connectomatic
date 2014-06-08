@@ -32,14 +32,10 @@
           </div>
     </div>
     <div>
-            <div class="followup-reminder">
-              <a class="navigate-right" href="view-contact.html">
-              <b>Followup reminder</b><br/> Make an intro for Emily from Dropbox.
-              </a>
-      </div>
+
       <div class="tag-header">
 
-        <div class="welcome-text-2">
+        <div class="welcome-text-3">
           <a class="navigate-right" href="addlocation.html">
               <p>Tag your 8 new LinkedIn connections</p>
           </a>
@@ -66,7 +62,7 @@
     </div>
 
     <div class="welcome-search">
-      <input type="search" id="search" class="srch" placeholder="Search"><a id="results-link" data-ignore="push" href="results.html">Go</a>
+      <input type="search" id="search" onclick="javascript:popsearch();" class="srch" placeholder="Search"><a id="results-link" data-ignore="push" href="results.html">Go</a>
     </div>
 
 
@@ -250,6 +246,9 @@
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/jquery.tagsinput.js"></script>
     <script>
+    function popsearch() {
+      $('#search').val("startups");
+    }
 
     $('#search').keypress(function (e) {
           if (e.which == 13) {

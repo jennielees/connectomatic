@@ -36,12 +36,17 @@
           <p><div class="card-header">
             <a class="icon icon-left-nav pull-left" href="addtag.html"></a>
 
-          Add note <div class="card-done"><a href="addfollowup.html">Done</a></div></div></p><br/>
+          Add note <div class="card-done"><a  class="icon icon-right-nav pull-right" href="addfollowup.html"></a></div></div></p><br/>
 
-          <textarea id="add-note-ta" class="add-note-ta" rows="5"></textarea>
+          <textarea onclick="javascript:populatenote();" id="add-note-ta" class="add-note-ta" rows="5"></textarea>
 
 
       </div>
+      <script>
+        $('#add-note-ta').click(function() {
+          $('#add-note-ta').text("Met at Startup Weekend B2B");
+        });
+      </script>
       </div>
 
 
