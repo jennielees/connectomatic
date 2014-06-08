@@ -419,6 +419,34 @@ margin-right: 20px;
     padding: 4px;
 }
 
+.login-img {
+  height: 100%;
+  width: 100%;
+  background: url('/people-blur-white.jpg');
+  background-size: cover;
+}
+
+.login-tagline {
+  margin-top: 30px;
+  color: #000;
+  padding: 20px;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.login-name {
+  margin-top: 80px;
+  font-size: 42px;
+  color: #000;
+  font-weight: 100;
+}
+
+.signin {
+  width: 200px;
+  margin-top: 40px;
+}
+
 .tagsinput .tag a {
   color: white;
 }
