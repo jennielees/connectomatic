@@ -54,7 +54,8 @@
     </div>
 
     <div class="welcome-search">
-      <input type="search" id="search"  onclick="javascript:popsearch();"  class="srch" placeholder="Search"><a id="results-link" data-ignore="push" href="results.html">Go</a>
+      <input type="search" id="search"  onclick="javascript:popsearch();"  class="srch" placeholder="Search">
+      <a id="results-link" href="#resultsModal">Go</a>
     </div>
 
     <ul class="table-view">
@@ -230,15 +231,158 @@
         </div>
       </div>
     </div><!-- /.modal -->
+
+    <div id="resultsModal" class="modal">
+
+          <div class="content">
+
+          <div class="welcome-search">
+          <div class="search-header">Results</div>
+            <input name="tags" id="tags" value="startups" />
+          </div>
+
+
+            <ul class="table-view feed">
+            <li  class="table-view-cell media item-header">
+              <div class="row-header">Strong matches</div>
+            </li>
+
+                <li class="table-view-cell media">
+                <a href="view-contact.html" data-transition="slide-in">
+                  <img class="media-object pull-left" src="avatars/av_1.jpg" alt="Placeholder image for Argo's poster">
+                  <div class="media-body">
+                    <div class="name">Jennifer Stannis</div>
+                    <div class="subtitle">Business Development at Barclays International</div>
+                      <div class="tags">
+                          <span class="tag">finance</span><span class="tag">foodie</span><span class="tag">napa</span>
+                      </div>
+                  </div>
+                </a>
+              </li>
+              <li class="table-view-cell media">
+                <a href="view-contact.html" data-transition="slide-in">
+                  <img class="media-object pull-left" src="avatars/av_4.jpg" alt="Placeholder image for Argo's poster">
+                  <div class="media-body">
+                    <div class="name">Michael Trimble</div>
+                    <div class="subtitle">Social Media Consultant</div>
+                  </div><div class="tags-body">
+                    <div class="tags">
+                        <span class="tag">football</span><span class="tag">for-hire</span><span class="tag">british</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="table-view-cell media">
+                <a href="view-contact.html" data-transition="slide-in">
+                  <img class="media-object pull-left" src="avatars/av_2.jpg" alt="Placeholder image for Skyfall's poster">
+                  <div class="media-body">
+                    <div class="name">Adam Farland</div>
+                    <div class="subtitle">Sales at IDG Global</div>
+                    <div class="tags">
+                        <span class="tag">travel</span><span class="tag">for-hire</span><span class="tag">canada</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="table-view-cell media">
+                <a href="view-contact.html" data-transition="slide-in">
+                  <img class="media-object pull-left" src="avatars/av_3.jpg" alt="Placeholder image for Wreck-it Ralph's poster">
+                  <div class="media-body">
+                    <div class="name">Graham DeYoung</div>
+                    <div class="subtitle">Software Engineer at Google</div>
+                    <div class="tags">
+                        <span class="tag">python</span><span class="tag">AI</span><span class="tag">android</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="table-view-cell media">
+                <a href="view-contact.html" data-transition="slide-in">
+                  <img class="media-object pull-left" src="avatars/av_6.jpg" alt="Placeholder image for Wreck-it Ralph's poster">
+                  <div class="media-body">
+                    <div class="name">Felix David</div>
+                    <div class="subtitle">VP Sales at eMusic</div>
+                    <div class="tags">
+                        <span class="tag">musician</span><span class="tag">hiring</span><span class="tag">mobile</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li  class="table-view-cell media item-header">
+                <div class="row-header">Other matches</div>
+              </li>
+
+              <li class="table-view-cell media">
+                <a href="view-contact.html" data-transition="slide-in">
+                  <img class="media-object pull-left" src="avatars/av_7.jpg" alt="Placeholder image for Argo's poster">
+                  <div class="media-body">
+                    <div class="name">Alan Williams</div>
+                    <div class="subtitle">Data Engineer at Stealth Startup</div>
+                    <div class="tags">
+                        <span class="tag">hadoop</span><span class="tag">hiring</span><span class="tag">photography</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="table-view-cell media">
+                <a  href="view-contact.html" data-transition="slide-in">
+                  <img class="media-object pull-left" src="avatars/av_8.jpg" alt="Placeholder image for Skyfall's poster">
+                  <div class="media-body">
+                    <div class="name">Helena Fleur</div>
+                    <div class="subtitle">Sales Associate at Gap, Inc</div>
+                    <div class="tags">
+                        <span class="tag">chicago</span><span class="tag">apartment</span>
+                        <span class="tag">wine</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="table-view-cell media">
+                <a  href="view-contact.html" data-transition="slide-in">
+                  <img class="media-object pull-left" src="avatars/av_5.jpg" alt="Placeholder image for Skyfall's poster">
+                  <div class="media-body">
+                    <div class="name">Emily Powers</div>
+                    <div class="subtitle">Developer Advocate at Dropbox</div>
+                    <div class="tags">
+                        <span class="tag">etsy</span><span class="tag">dog</span><span class="tag">APIs</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="table-view-cell media">
+                <a href="view-contact.html" data-transition="slide-in">
+                  <img class="media-object pull-left" src="avatars/av_9.jpg" alt="Placeholder image for Wreck-it Ralph's poster">
+                  <div class="media-body">
+                    <div class="name">Marla Davis</div>
+                    <div class="subtitle">Professional Dancer</div>
+                    <div class="tags">
+                        <span class="tag">new york</span><span class="tag">for-hire</span><span class="tag">wedding</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div><!-- /.content -->
+        </div><!-- end modal -->
+
+
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/jquery.tagsinput.js"></script>
     <script>
 
+    $('#tags').tagsInput();
+
     $('#search').keypress(function (e) {
           if (e.which == 13) {
-            window.location.replace("results.html").delay('400');
+              loadResults();
           }
         });
+
+    function loadResults() {
+      window.location.replace("results.html").delay('400');
+    }
 
     function toggletag() {
       $('#startups-tag').toggle();

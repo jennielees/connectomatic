@@ -343,6 +343,25 @@ margin-right: 20px;
   top: -5px;
 }
 
+.no-dec {
+  color: #000;
+}
+
+#tags_tagsinput {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#tags_tag {
+  border: 0px;
+}
+
+#tags_tag:active {
+  border: 0px;
+}
+
+
 .welcome-text .navigate-right:after {
   top: 163px;
 }

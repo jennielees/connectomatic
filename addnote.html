@@ -15,7 +15,6 @@
   </head>
   <body>
     <header class="bar bar-nav">
-      <a class="icon icon-left-nav pull-left" href="index.html"></a>
       <a class="icon icon-gear pull-right" href="#settingsModal"></a>
       <h1 class="title"><a href="/">Connectomatic</a></h1>
     </header>
@@ -36,7 +35,7 @@
           <p><div class="card-header">
             <a class="icon icon-left-nav pull-left" href="addtag.html"></a>
 
-          Add note <div class="card-done"><a  class="icon icon-right-nav pull-right" href="addfollowup.html"></a></div></div></p><br/>
+          <a class="no-dec" href="javascript:populatenote();">Add note</a> <div class="card-done"><a  class="icon icon-right-nav pull-right" href="addfollowup.html"></a></div></div></p><br/>
 
           <textarea onclick="javascript:populatenote();" id="add-note-ta" class="add-note-ta" rows="5"></textarea>
 
@@ -94,9 +93,10 @@
     </div><!-- /.modal -->
     <script src="js/jquery-1.11.0.min.js"></script>
     <script>
-      $('#add-note-ta').click(function() {
-        $('#add-note-ta').text("Met at Startup Weekend B2B");
-      });
+
+        function populatenote() {
+          $('#add-note-ta').text("Met at Startup Weekend B2B");
+        }
     </script>
   </body>
 </html>
