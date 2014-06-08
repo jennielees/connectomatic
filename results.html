@@ -10,10 +10,15 @@
 
     <link rel="stylesheet" href="css/ratchet.min.css">
     <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.tagsinput.css" />
+
     <script src="js/ratchet.min.js"></script>
   </head>
   <body>
     <header class="bar bar-nav">
+      <a class="icon icon-left-nav pull-left" href="index.html"></a>
+
       <a class="icon icon-gear pull-right" href="#settingsModal"></a>
       <h1 class="title">Connectomatic</h1>
     </header>
@@ -21,86 +26,28 @@
 
     <div class="content">
 
-    <div class="welcome-header">
-
-        <div class="welcome-flash">
-            <img class="main-av" src="avatars/av_0_lg.jpg"/>
-            <div>Welcome back, Steve.</div>
-
-            <div class="welcome-text">
-              <p>You have 9 new LinkedIn connections. <br/>Start tagging!</p>
-
-        </div>
-
-    </div>
-
-    <div class="carousel-outer">
-      <a href="add-location.html" class="carousel">
-        <img src="avatars/av_1.jpg">
-        <img src="avatars/av_2.jpg">
-        <img src="avatars/av_3.jpg">
-        <img src="avatars/av_4.jpg">
-        <img src="avatars/av_5.jpg">
-        <div class="more-carousel">
-          <span class="icon icon-more"></span>
-        </div>
-        </a>
-      </div>
-    </div>
-
     <div class="welcome-search">
-      <input type="search" class="srch" placeholder="Search"><a href="results.html">Go</a>
+    <div class="search-header">Results</div>
+      <input name="tags" id="tags" value="startups,san francisco,cloud" />
     </div>
 
-    <ul class="table-view">
-      <li class="table-view-cell table-view-divider">New connections</li>
-
-      <li class="table-view-cell media meet-prompt">
-        <a class="navigate-right" href="#sw">
-          Connected at Startup Weekend  <span class="badge">6</span>
-        </a>
-      </li>
-      <li class="table-view-cell media meet-prompt">
-        <a class="navigate-right" href="#older">
-            Connected in the last week <span class="badge">3</span>
-        </a>
-      </li>
-    </ul>
-      <a name="sw"></a>
       <ul class="table-view feed">
-        <li  class="table-view-cell media item-header">
-          <div class="row-header">2 hours ago <span class="badge">NEW</span></div>
-        </li>
-        <li class="table-view-cell media">
+      <li  class="table-view-cell media item-header">
+        <div class="row-header">Strong matches</div>
+      </li>
+
+
+          <li class="table-view-cell media">
           <a href="view-contact.html" data-transition="slide-in">
             <img class="media-object pull-left" src="avatars/av_1.jpg" alt="Placeholder image for Argo's poster">
             <div class="media-body">
               <div class="name">Jennifer Stannis</div>
               <div class="subtitle">Business Development at Barclays International</div>
-
+                <div class="tags">
+                    <span class="tag">startups</span><span class="tag">finance</span><span class="tag">foodie</span>
+                </div>
             </div>
           </a>
-        </li>
-        <li class="table-view-cell media">
-          <a href="view-contact.html" data-transition="slide-in">
-            <img class="media-object pull-left" src="avatars/av_2.jpg" alt="Placeholder image for Skyfall's poster">
-            <div class="media-body">
-              <div class="name">Adam Farland</div>
-              <div class="subtitle">Sales at IDG Global</div>
-            </div>
-          </a>
-        </li>
-        <li class="table-view-cell media">
-          <a href="view-contact.html" data-transition="slide-in">
-            <img class="media-object pull-left" src="avatars/av_3.jpg" alt="Placeholder image for Wreck-it Ralph's poster">
-            <div class="media-body">
-              <div class="name">Graham DeYoung</div>
-              <div class="subtitle">Software Engineer at Google</div>
-            </div>
-          </a>
-        </li>
-        <li  class="table-view-cell media item-header">
-          <div class="row-header">This morning</div>
         </li>
         <li class="table-view-cell media">
           <a href="view-contact.html" data-transition="slide-in">
@@ -116,13 +63,25 @@
           </a>
         </li>
         <li class="table-view-cell media">
-          <a  href="view-contact.html" data-transition="slide-in">
-            <img class="media-object pull-left" src="avatars/av_5.jpg" alt="Placeholder image for Skyfall's poster">
+          <a href="view-contact.html" data-transition="slide-in">
+            <img class="media-object pull-left" src="avatars/av_2.jpg" alt="Placeholder image for Skyfall's poster">
             <div class="media-body">
-              <div class="name">Emily Powers</div>
-              <div class="subtitle">Developer Advocate at Dropbox</div>
+              <div class="name">Adam Farland</div>
+              <div class="subtitle">Sales at IDG Global</div>
               <div class="tags">
-                  <span class="tag">etsy</span><span class="tag">dog</span><span class="tag">APIs</span>
+                  <span class="tag">travel</span><span class="tag">for-hire</span><span class="tag">canada</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="table-view-cell media">
+          <a href="view-contact.html" data-transition="slide-in">
+            <img class="media-object pull-left" src="avatars/av_3.jpg" alt="Placeholder image for Wreck-it Ralph's poster">
+            <div class="media-body">
+              <div class="name">Graham DeYoung</div>
+              <div class="subtitle">Software Engineer at Google</div>
+              <div class="tags">
+                  <span class="tag">python</span><span class="tag">AI</span><span class="tag">android</span>
               </div>
             </div>
           </a>
@@ -139,9 +98,9 @@
             </div>
           </a>
         </li>
-        <a name="older"></a>
+
         <li  class="table-view-cell media item-header">
-          <div class="row-header">Yesterday</div>
+          <div class="row-header">Other matches</div>
         </li>
 
         <li class="table-view-cell media">
@@ -165,6 +124,19 @@
               <div class="tags">
                   <span class="tag">chicago</span><span class="tag">apartment</span>
                   <span class="tag">wine</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="table-view-cell media">
+          <a  href="view-contact.html" data-transition="slide-in">
+            <img class="media-object pull-left" src="avatars/av_5.jpg" alt="Placeholder image for Skyfall's poster">
+            <div class="media-body">
+              <div class="name">Emily Powers</div>
+              <div class="subtitle">Developer Advocate at Dropbox</div>
+              <div class="tags">
+                  <span class="tag">etsy</span><span class="tag">dog</span><span class="tag">APIs</span>
               </div>
             </div>
           </a>
@@ -225,5 +197,12 @@
         </div>
       </div>
     </div><!-- /.modal -->
-  </body>
+    <script src="js/jquery-1.11.0.min.js"></script>
+
+        <script src="js/jquery.tagsinput.js"></script>
+    <script>
+      $('#tags').tagsInput();
+
+    </script>
+</body>
 </html>

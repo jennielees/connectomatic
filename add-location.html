@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Connect</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/ratchet.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/ratchet.js"></script>
+  </head>
+  <body>
+    <header class="bar bar-nav">
+      <a class="icon icon-left-nav pull-left" href="index.html"></a>
+      <a class="icon icon-gear pull-right" href="#settingsModal"></a>
+      <h1 class="title"><a href="/">Connectomatic</a></h1>
+    </header>
+
+
+    <div class="content">
+
+      <div class="single-contact-header">
+          <img class="media-object main-av pull-left single-img" src="avatars/av_1_lg.jpg" alt="">
+
+          <h3>Jennifer Stannis</h3>
+          <div class="subtitle">Business Development at Barclays International</div>
+          <div class="linkedin"><i class="fa fa-linkedin-square"></i> <a href="">linkedin/jenniferstannis</a></div>
+      </div>
+
+      <div class="card">
+        <div class="stream-content event-prompt">
+          <p><b>Did you meet Jennifer at <a class="hov" href="">Startup Weekend?</a></b></p>
+          <div class="event-reply">
+            <a href="add-tag.html"><span class="icon icon-check"></span></a>
+            <a href="add-tag.html"><span class="icon icon-close"></span></a>
+          </div>
+      </div>
+      </div>
+
+
+
+
+
+    <!-- Settings modal -->
+    <div id="settingsModal" class="modal">
+      <header class="bar bar-nav">
+        <a class="icon icon-close pull-right" href="#settingsModal"></a>
+        <h1 class="title">Settings</h1>
+      </header>
+
+      <div class="content">
+        <form class="input-group">
+          <input type="text" placeholder="Full name">
+          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Username">
+        </form>
+
+        <h5 class="content-padded">App settings</h5>
+
+        <ul class="table-view">
+          <li class="table-view-cell media">
+            <span class="media-object pull-left icon icon-sound"></span>
+            <div class="media-body">
+              Enable sounds
+            </div>
+            <div class="toggle">
+              <div class="toggle-handle"></div>
+            </div>
+          </li>
+          <li class="table-view-cell media">
+            <span class="media-object pull-left icon icon-person"></span>
+            <div class="media-body">
+              Parental controls
+            </div>
+            <div class="toggle">
+              <div class="toggle-handle"></div>
+            </div>
+          </li>
+        </ul>
+        <div class="content-padded">
+          <button class="btn btn-positive btn-block">Save settings</button>
+        </div>
+      </div>
+    </div><!-- /.modal -->
+  </body>
+</html>
