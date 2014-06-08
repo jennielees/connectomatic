@@ -183,7 +183,8 @@ body {
 }
 
 .single-contact-profile {
-  padding: 10px;
+  margin-top: -10px;
+  padding: 20px;
 }
 
 #startups-hidden {
