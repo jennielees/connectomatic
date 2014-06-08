@@ -3,6 +3,15 @@
   font-size: 0px !important;
   line-height: 0px !important;
 }
+
+body {
+  font-weight: 300;
+}
+
+b {
+  font-weight: 500;
+}
+
 .slider img {
   width: auto;
   height: 150px;
@@ -71,9 +80,44 @@
   margin-top: 10px;
 }
 
+.stream-content {
+  padding: 10px;
+}
+
+.stream-content p {
+  margin: 0px;
+}
+
+.note {
+  border-left: 2px solid #ccc;
+  padding-left: 10px;
+}
+
+.stream-time {
+  font-size: 11px;
+  color:#999;
+}
+
 .welcome-search {
   padding: 10px;
   margin-top: 20px;
+}
+
+.single-contact-profile {
+  padding: 10px;
+}
+
+h5 {
+  color: #333;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  padding: 0px;
+}
+
+hr {
+  height: 0px;
+  border-top:1px solid #999;
+  border-bottom: 0px;
 }
 
 .subtitle {
@@ -122,18 +166,22 @@
   vertical-align: middle;
   max-width: 100%;
   background-color: transparent;
-  line-height: 22px;
   font-size: 12px;
   margin-top: 0px;
+  line-height: 2em;
 }
 
 .tags .tag {
   margin-right: 2px;
   color: white;
   font-weight: normal;
-  background: #aaa;
+  background: rgba(94, 172, 173, 1.0);
   border-radius: .25em;
   padding: 4px;
+}
+
+.tags.smart .tag {
+  background: rgba(35, 170, 100, 1.0);
 }
 
 .single-contact-header {
