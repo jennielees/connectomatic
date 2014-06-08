@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="css/ratchet.min.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
     <script src="js/ratchet.min.js"></script>
   </head>
   <body>
@@ -24,32 +26,35 @@
     <div class="welcome-header">
 
         <div class="welcome-flash">
-            <img class="main-av" src="avatars/av_0_lg.jpg"/>
-            <div>Welcome back, Steve.</div>
+            <img class="main-av" src="avatars/av_elena.jpg"/>
+            <div>Welcome back, Elena.</div>
 
             <div class="welcome-text">
-              <p>You have 9 new LinkedIn connections. <br/>Start tagging!</p>
+              <a class="navigate-right" href="addlocation.html">
+                  <p>Tag your 9 new LinkedIn connections</p>
+              </a>
+            </div>
+          </div>
 
-        </div>
 
-    </div>
 
-    <div class="carousel-outer">
-      <a href="addlocation.html" class="carousel">
-        <img src="avatars/av_1.jpg">
-        <img src="avatars/av_2.jpg">
-        <img src="avatars/av_3.jpg">
-        <img src="avatars/av_4.jpg">
-        <img src="avatars/av_5.jpg">
-        <div class="more-carousel">
-          <span class="icon icon-more"></span>
-        </div>
-        </a>
-      </div>
+          <div class="carousel-outer">
+            <a href="addlocation.html" class="carousel">
+              <img src="avatars/av_1.jpg">
+              <img src="avatars/av_2.jpg">
+              <img src="avatars/av_3.jpg">
+              <img src="avatars/av_4.jpg">
+              <img src="avatars/av_5.jpg">
+              <div class="more-carousel">
+                <span class="icon icon-more"></span>
+              </div>
+              </a>
+          </div>
+
     </div>
 
     <div class="welcome-search">
-      <input type="search" class="srch" placeholder="Search"><a href="results.html">Go</a>
+      <input type="search" id="search" class="srch" placeholder="Search"><a id="results-link" data-ignore="push" href="results.html">Go</a>
     </div>
 
     <ul class="table-view">
@@ -225,5 +230,16 @@
         </div>
       </div>
     </div><!-- /.modal -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script>
+
+    $('#search').keypress(function (e) {
+          if (e.which == 13) {
+            window.location.replace("results.html").delay('400');
+          }
+        });
+    </script>
+
   </body>
 </html>

@@ -35,18 +35,26 @@
         <div class="stream-content follow-prompt">
           <p><div class="card-header">
             <a class="icon icon-left-nav pull-left" href="addnote.html"></a>Add follow-up
-            <div class="card-done"><a href="index2.html">Done</a></div></div></p><br/>
+            <div class="card-done"><a href="index2.html#bottom-welcome" data-transition="slide-in">Done</a></div></div></p><br/>
 
           <div class="event-prompt">
           Remind me to
-            <a class="hov" href="">make an introduction</a>
+            <a class="hov" id="fu-type" href="#">make an introduction</a>
           in
-            <a class="hov" href="">2 days</a>
+            <a class="hov" id="fu-time" href="#">2 days</a>
           </div>
 
       </div>
-      </div>
+    </div>
 
+
+    <div id="intro-pop" class="">
+      <ul class="table-view">
+        <li class="table-view-cell">email</li>
+        <li class="table-view-cell">make an introduction</li>
+        <li class="table-view-cell">call</li>
+      </ul>
+    </div>
 
 
     <!-- Settings modal -->
@@ -90,5 +98,15 @@
         </div>
       </div>
     </div><!-- /.modal -->
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script>
+
+      $('#fu-type').click(function() {
+        $('#intro-pop').toggle();
+      });
+
+    </script>
+
   </body>
 </html>

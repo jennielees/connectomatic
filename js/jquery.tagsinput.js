@@ -96,8 +96,8 @@
 				}
 
 				if (value !='' && skipTag != true) {
-                    $('<span>').addClass('tag').append(
-                        $('<span>').text(value).append('&nbsp;&nbsp;'),
+                    $('<div>').addClass('tag').append(
+                        $('<div>').text(value).append('&nbsp;&nbsp;'),
                         $('<a>', {
                             href  : '#',
                             title : 'Removing tag',
@@ -180,7 +180,6 @@
       defaultText:'',
       minChars:0,
       width:'300px',
-      height:'20px',
       autocomplete: {selectFirst: false },
       'hide':true,
       'delimiter':',',

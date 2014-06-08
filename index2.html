@@ -24,12 +24,23 @@
     <div class="welcome-header">
 
         <div class="welcome-flash">
-            <img class="main-av" src="avatars/av_0_lg.jpg"/>
-            <div>Welcome back, Steve.</div>
+            <img class="main-av" src="avatars/av_elena.jpg"/>
+            <div>Welcome back, Elena.</div>
+            <a name="bottom-welcome"></a>
+          </div>
+    </div>
+    <div>
+            <div class="followup-reminder">
+              <a class="navigate-right" href="view-contact.html">
+              <b>Followup reminder</b><br/> Make an intro for Emily from Dropbox.
+              </a>
+      </div>
+      <div class="tag-header">
 
-            <div class="welcome-text">
-              <p>You have 8 new LinkedIn connections. <br/>Start tagging!</p>
-
+        <div class="welcome-text-2">
+          <a class="navigate-right" href="addlocation.html">
+              <p>Tag your 8 new LinkedIn connections</p>
+          </a>
         </div>
 
     </div>
@@ -47,12 +58,15 @@
           <span class="icon icon-more"></span>
         </div>
         </a>
-      </div>
+    </div>
+
+
     </div>
 
     <div class="welcome-search">
-      <input type="search" placeholder="Search">
+      <input type="search" id="search" class="srch" placeholder="Search"><a id="results-link" data-ignore="push" href="results.html">Go</a>
     </div>
+
 
     <ul class="table-view">
       <li class="table-view-cell table-view-divider">New connections</li>
@@ -71,7 +85,7 @@
 
       <ul class="table-view feed">
         <li  class="table-view-cell media item-header">
-          <div class="row-header">2 hours ago <span class="badge">NEW</span></div>
+          <div class="row-header">2 hours ago </div>
         </li>
 
         <li class="table-view-cell media">
@@ -230,5 +244,17 @@
         </div>
       </div>
     </div><!-- /.modal -->
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script>
+
+    $('#search').keypress(function (e) {
+          if (e.which == 13) {
+            window.location.replace("results.html").delay('400');
+          }
+        });
+    </script>
+
   </body>
 </html>

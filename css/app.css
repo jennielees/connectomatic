@@ -12,6 +12,18 @@ b {
   font-weight: 500;
 }
 
+.intro-content img {
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+    border: solid 1px #000;
+
+}
+
+.intro-content .tags {
+  margin-bottom: 0px;
+}
+
 .slider img {
   width: auto;
   height: 150px;
@@ -26,6 +38,11 @@ b {
   font-size: 14px;
 }
 
+.intro-content li.table-view-cell {
+  padding-right: 15px;
+}
+
+
 .feed li.media {
   padding-right: 15px;
 }
@@ -37,8 +54,9 @@ b {
 .carousel-outer {
   padding: 10px;
   height: 40px;
-  margin-top: -12px;
-  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top: -30px;
+  margin-bottom: 0px;
 }
 
 .more-carousel {
@@ -119,6 +137,14 @@ b {
   padding-bottom: 30px;
 }
 
+.add-note-ta {
+  padding: 10px;
+  font-size: 14px;
+}
+
+body {
+  overflow-x: hidden;
+}
 .note {
   border-left: 2px solid #ccc;
   padding-left: 10px;
@@ -129,6 +155,28 @@ b {
   color:#999;
 }
 
+#intro-pop {
+  width: 170px;
+  font-size: 14px;
+  height: 130px;
+  position: absolute;
+  top: 230px;
+  display: none;
+  left: 130px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+#intro-pop ul {
+  border: 0px;
+}
+
+#intro-pop li {
+  border-top: 0px;
+  padding: 10px;
+}
+
 .welcome-search {
   padding: 10px;
   margin-top: 20px;
@@ -136,6 +184,10 @@ b {
 
 .single-contact-profile {
   padding: 10px;
+}
+
+#startups-hidden {
+  display: none;
 }
 
 h5 {
@@ -226,6 +278,89 @@ width: 230px !important;
 margin-right: 20px;
 }
 
+.intro-content {
+  margin-top: 20px;
+}
+
+.intro-content .heading {
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+
+.intro-content .subheading {
+  font-weight: 300;
+  font-size: 13px;
+  color: #999;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.single-contact-action {
+  padding: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.followup-reminder {
+  border: 1px solid #ccc;
+  background-color: rgba(255, 247, 221, 1.0);
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  text-align: left;
+  margin-top: 0px;
+}
+.tag-header {
+  padding: 0px 10px 10px 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.intro-search {
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+.followup-reminder a {
+  color: #333;
+}
+
+.followup-reminder .navigate-right:after {
+  position: relative;
+  right: -40px;
+  top: -5px;
+}
+
+.welcome-text .navigate-right:after {
+  top: 163px;
+}
+
+.welcome-text-2 {
+  margin-top: 10px;
+}
+
+.welcome-text-2 .navigate-right:after {
+  top: 86px;
+}
+
+
+.single-contact-action .followup-reminder {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.single-contact-action button {
+  font-size: 16px;
+}
+
+.intro-send button {
+  font-size: 16px;
+  margin-left: 70px;
+}
+
 .search-header {
   margin-bottom: 10px;
   margin-top: -10px;
@@ -242,12 +377,42 @@ margin-right: 20px;
     padding: 4px;
 }
 
-.card-done a, .card-done a:visited, .card-done a:hover {
-  color: rgba(66, 139, 202, 1.0);
-  font-size: 20px;
-  font-weight: 300;
-  text-align: center;
+.tagsinput .tag a {
+  color: white;
 }
+
+.dotted {
+  position: absolute;
+  top: 65px;
+  left: 80px;
+  width: 50%;
+  border-bottom: 2px dashed black;
+}
+
+.intro-send {
+  display: block;
+  padding: 10px;
+  margin-top: 50px;
+}
+.intro-send .tags {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.intro-send .body {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.intro-left {
+  padding-left: 20px;
+}
+
+.intro-right {
+  padding-right:  20px;
+  text-align: right;
+}
+
 
 .tags .tag {
   margin-right: 2px;
@@ -257,6 +422,26 @@ margin-right: 20px;
   border-radius: .25em;
   padding: 4px;
 }
+
+.intro-content .tag {
+  background: #ccc;
+}
+
+.match {
+  background: rgba(75, 206, 77, 1.0) !important;
+}
+
+.weak-match {
+  background: rgba(236, 204, 84, 1.0) !important;
+}
+
+.card-done a, .card-done a:visited, .card-done a:hover {
+  color: rgba(66, 139, 202, 1.0);
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
 
 .tags.suggested .tag {
   background: #aaa;

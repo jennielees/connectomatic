@@ -43,12 +43,12 @@
           </p>
           <div class="add-tags"></div>
           <h5>My tags</h5>
-          <p class="tags">
-              <input type="text" placeholder="Add tag">
-          </p>
+          <div id="my-added" class="tags"><span id="startups-hidden" class="tag">startups</span></div>
+          <input type="search" class="srch" id="search" placeholder="Add tag"></input>
+
           <h5>Frequently used tags</h5>
           <p class="tags suggested">
-          <span class="tag">etsy</span><span class="tag">dog</span><span class="tag">APIs</span><span class="tag">women</span><span class="tag">data science</span>
+            <span class="tag">cleantech</span><span id="startups-tag" class="tag">startups</span><span class="tag">APIs</span><span class="tag">women</span><span class="tag">data science</span>
           </p>
 
       </div>
@@ -97,5 +97,13 @@
         </div>
       </div>
     </div><!-- /.modal -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script>
+      $('#startups-tag').click(function() {
+        $('#startups-tag').toggle();
+        $('#startups-hidden').toggle();
+      })
+    </script>
   </body>
 </html>

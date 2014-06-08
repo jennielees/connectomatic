@@ -29,8 +29,19 @@
           <h3>Emily Powers</h3>
           <div class="subtitle">Developer Advocate at Dropbox</div>
           <div class="linkedin"><i class="fa fa-linkedin-square"></i> <a href="">linkedin/empowered</a></div>
+
       </div>
 
+      <div class="single-contact-action">
+
+            <div class="followup-reminder">
+              <b>Followup reminder</b><br/> Introduce Emily to data science people.
+            </div>
+
+        <a href="#introModal" data-transition="slide-in"><button class="btn btn-intro btn-primary btn-outlined"><i class="fa fa-paper-plane-o"></i> Introduce</button></a>
+        <a href=""><button class="btn btn-connect btn-primary btn-outlined"><i class="fa fa-envelope-o"></i> Email</button></a>
+
+      </div>
 
       <div class="single-contact-profile">
           <h5>Smart tags</h5>
@@ -48,32 +59,43 @@
 
   <hr/>
 
+
+
+
+      <div class="card">
+          <div class="stream-content">
+            <p><b>Added tags</b></p>
+            <p class="tags">
+            <span class="tag">etsy</span><span class="tag">dog</span><span class="tag">APIs</span>
+            <span class="tag">women</span><span class="tag">data science</span>
+            </p>
+            <div class="stream-time">Thursday June 5th, 10:34pm</div>
+        </div>
+      </div>
+
+
     <div class="card">
       <div class="stream-content">
         <p><b>Added follow-up</b></p>
         <p class="followup">
-          <i class="fa fa-calendar"></i> Invite to data science meetup
-        <div class="stream-time">Scheduled: Monday at 9am</div>
+          <i class="fa fa-calendar"></i> Introduce to data science people
+        <div class="stream-time">Scheduled: today</div>
+        <div class="stream-time">Thursday June 5th, 10:33pm</div>
+
     </div>
     </div>
 
-
-    <div class="card">
-        <div class="stream-content">
-          <p><b>Added tags</b></p>
-          <p class="tags">
-          <span class="tag">etsy</span><span class="tag">dog</span><span class="tag">APIs</span>
-          <span class="tag">women</span><span class="tag">data science</span>
-          </p>
-          <div class="stream-time">Thursday June 5th, 10:34pm</div>
-      </div>
-    </div>
 
 
 
     <div class="card">
         <div class="stream-content">
           <p><b>Added notes</b></p>
+
+
+          <p class="note">
+          Starting a data science meetup
+          </p>
 
           <p class="note">
           Has an Etsy store for workout gear.. look up empowered
@@ -97,6 +119,122 @@
 
 
 
+  <div id="introModal" class="modal">
+    <header class="bar bar-nav">
+      <a class="icon icon-close pull-right" href="#introModal"></a>
+      <h1 class="title">Introduce Emily</h1>
+    </header>
+
+
+    <div class="content intro-content">
+      <div class="heading">Suggested Intros</div>
+      <div class="subheading">Based on Emily's tags</div>
+      <ul class="table-view">
+
+        <li class="table-view-cell ">
+          <a href="#makeintroModal" data-transition="fade">
+            <img class="media-object pull-left" src="avatars/av_11.jpg" alt="Placeholder image for Argo's poster">
+            <div class="media-body">
+              <div class="name">Stephanie Ou</div>
+              <div class="subtitle">Analyst at Meteorologie</div>
+              <div class="tags">
+                  <span class="tag match">big-data</span><span class="tag match">women</span><span class="match tag">events</span><span class="tag">+15 more</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="table-view-cell ">
+          <a href="#makeintroModal" data-transition="fade">
+            <img class="media-object pull-left" src="avatars/av_3.jpg" alt="Placeholder image for Wreck-it Ralph's poster">
+            <div class="media-body">
+              <div class="name">Graham DeYoung</div>
+              <div class="subtitle">Software <span class="weak-match">Engineer</span> at Google</div>
+              <div class="tags">
+                  <span class="tag match">python</span><span class="tag match">san francisco</span><span class="tag">AI</span><span class="tag">+11 more</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="table-view-cell ">
+          <a href="#makeintroModal" data-transition="slide-in">
+            <img class="media-object pull-left" src="avatars/av_7.jpg" alt="Placeholder image for Argo's poster">
+            <div class="media-body">
+              <div class="name">Alan Williams</div>
+              <div class="subtitle">Data <span class="weak-match">Engineer</span> at Stealth Startup</div>
+              <div class="tags">
+                  <span class="tag weak-match">hadoop</span><span class="tag">hiring</span><span class="tag">photography</span><span class="tag">+8 more</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="table-view-cell ">
+          <a href="#makeintroModal" data-transition="slide-in">
+            <img class="media-object pull-left" src="avatars/av_12.jpg" alt="Placeholder image for Argo's poster">
+            <div class="media-body">
+              <div class="name">Janice Chen</div>
+              <div class="subtitle">Product Consultant</div>
+              <div class="tags">
+                  <span class="tag weak-match">APIs</span><span class="tag">product</span><span class="tag">fitness</span><span class="tag">+13 more</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
+          <div class="intro-search">
+            <input type="search" id="search" class="srch" placeholder="Search"><a id="results-link" data-ignore="push" href="results.html">Go</a>
+          </div>
+
+    </div>
+
+  </div>
+
+
+  <div id="makeintroModal" class="modal">
+    <header class="bar bar-nav">
+      <a class="icon icon-close pull-right" href="#makeintroModal"></a>
+      <h1 class="title">Introduce Emily to Stephanie</h1>
+    </header>
+
+          <div class="content intro-content">
+            <div class="intro-left">
+              <img class="media-object pull-left" src="avatars/av_5.jpg" alt="Placeholder image for Argo's poster">
+            </div>
+            <div class="dotted"></div>
+            <div class="intro-right">
+              <img class="media-object pull-right" src="avatars/av_11.jpg" alt="Placeholder image for Argo's poster">
+            </div>
+
+            <div class="intro-send">
+              <div class="heading">Common tags</div>
+              <div class="body">
+                <div class="tags">
+                    <span class="tag match">big-data</span><span class="tag match">women</span><span class="match tag">events</span><span class="tag match">san francisco</span>
+                </div>
+              </div>
+              <div class="heading">Intro prompt</div>
+              <div class="body">
+                <p>Emily is a Developer Advocate at Dropbox who I met at Startup Weekend.</p>
+
+                <p>Stephanie is an Analyst at Meterologie.</p>
+
+                <p>You're both interested in big data, you should chat!</p>
+
+                <a href="index2.html" data-transition="slide-in">
+                  <button class="btn btn-intro btn-primary btn-outlined">
+                    <i class="fa fa-envelope-o"></i> Create draft</button></a>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+  </div>
 
     <!-- Settings modal -->
     <div id="settingsModal" class="modal">
@@ -139,5 +277,6 @@
         </div>
       </div>
     </div><!-- /.modal -->
+    
   </body>
 </html>
