@@ -88,6 +88,13 @@ b {
   border-bottom: 1px #aaa dashed;
 }
 
+.event-prompt div.hov {
+  color: #666;
+  text-decoration: none;
+  border-bottom: 1px #aaa dashed;
+  display: inline;
+}
+
 .event-prompt .icon {
   border-radius: 50%;
   border: 1px solid #ccc;
